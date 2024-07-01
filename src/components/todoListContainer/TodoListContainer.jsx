@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
 import TodoListItem from "../todoListItem/TodoListItem";
 
@@ -15,7 +16,7 @@ const TodoListContainer = () => {
     const updateTodo = todoContainer.filter((data, index) => index != id);
     setTodoContainer(updateTodo);
     localStorage.setItem("todo", JSON.stringify(updateTodo));
-    console.log("todo", id);
+   
   };
   useEffect(() => {
     const myTodo = JSON.parse(localStorage.getItem("todo"));
