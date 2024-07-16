@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   background: #1d1d1d;
   display: flex;
@@ -12,6 +13,7 @@ body {
   min-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
+ 
 }
 .todo--container {
   background: #fff;
@@ -19,6 +21,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
   width: 40rem;
+   ;
   h3 {
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -79,4 +82,24 @@ body {
       cursor: pointer;
     }
   }
+}
+@media (max-width:800px) {
+
+.todo--container {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+  width: 30rem !important;
+  margin-inline-start: 15px;
+  
+
+
+}
+.container{
+  width: 5rem  !important;
+ 
+}
+
+  
 }
