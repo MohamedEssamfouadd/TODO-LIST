@@ -9,7 +9,7 @@ body {
   background: #1d1d1d;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center !important;
   min-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
@@ -90,15 +90,46 @@ body {
   padding: 1rem;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
-  width: 30rem !important;
-  margin-inline-start: 15px;
+  max-width: 20rem !important;
+ margin-inline: 15px !important;
+
+
+
+
   
 
 
 }
 .container{
-  width: 5rem  !important;
+  max-width: 5rem  !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  margin-left: 30px !important;
+
  
+ 
+
+ 
+}
+.todo--items {
+
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  button {
+    width: fit-content;
+    border: 0;
+    background: red;
+    color: white;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    border-radius: 16px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
 }
 
   
